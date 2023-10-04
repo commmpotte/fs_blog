@@ -122,6 +122,7 @@ export const AddPost = () => {
       {imageUrl && (
         <>
           <Button
+            style={{ padding: '9px', margin: '10px' }}
             onClick={onClickRemoveImage}
             variant="contained"
             color="error"
@@ -149,7 +150,7 @@ export const AddPost = () => {
       <TextField
         classes={{ root: styles.tags }}
         variant="standard"
-        placeholder="Tags"
+        placeholder="Tags with ','"
         value={tags}
         onChange={(e) => setTags(e.target.value)}
         fullWidth
