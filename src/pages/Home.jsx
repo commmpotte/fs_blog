@@ -19,7 +19,6 @@ export const Home = () => {
   const isPostsLoading = posts.status === 'loading'
   const isTagsLoading = tags.status === 'loading'
 
-
   React.useEffect(() => {
     dispatch(fetchPost())
     dispatch(fetchTags())
@@ -44,10 +43,11 @@ export const Home = () => {
                 _id={obj._id}
                 title={obj.title}
                 imageUrl={
-                  obj.imageUrl ? `http://localhost:4444${obj.imageUrl}` : ''
+                  obj.imageUrl
+                    ? `${process.env.REACT_APP_API_URL}${obj.imageUrl}`
+                    : ''
                 }
                 user={obj.user}
-
                 // user={{
                 //   avatarUrl: {obj.user.avatarUrl},
                 //   fullName: 'Keff',
