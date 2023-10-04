@@ -1,18 +1,19 @@
-import React from "react";
+import React from 'react'
 
-import { SideBlock } from "./SideBlock";
-import ListItem from "@mui/material/ListItem";
-import ListItemAvatar from "@mui/material/ListItemAvatar";
-import Avatar from "@mui/material/Avatar";
-import ListItemText from "@mui/material/ListItemText";
-import Divider from "@mui/material/Divider";
-import List from "@mui/material/List";
-import Skeleton from "@mui/material/Skeleton";
+import { SideBlock } from './SideBlock'
+import ListItem from '@mui/material/ListItem'
+import ListItemAvatar from '@mui/material/ListItemAvatar'
+import Avatar from '@mui/material/Avatar'
+import ListItemText from '@mui/material/ListItemText'
+import Divider from '@mui/material/Divider'
+import List from '@mui/material/List'
+import Skeleton from '@mui/material/Skeleton'
 
 export const CommentsBlock = ({ items, children, isLoading = true }) => {
   return (
-    <SideBlock title="Комментарии">
-      <List>
+    <SideBlock title="Comments">
+      ...it will be here soon
+      {/* <List>
         {(isLoading ? [...Array(5)] : items).map((obj, index) => (
           <React.Fragment key={index}>
             <ListItem alignItems="flex-start">
@@ -38,8 +39,8 @@ export const CommentsBlock = ({ items, children, isLoading = true }) => {
             <Divider variant="inset" component="li" />
           </React.Fragment>
         ))}
-      </List>
-      {children}
+      </List> */}
+      {/* {children} */}
     </SideBlock>
-  );
-};
+  )
+}

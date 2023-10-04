@@ -48,10 +48,6 @@ export const Home = () => {
                     : ''
                 }
                 user={obj.user}
-                // user={{
-                //   avatarUrl: {obj.user.avatarUrl},
-                //   fullName: 'Keff',
-                // }}
                 createdAt={obj.createdAt}
                 viewsCount={obj.viewsCount}
                 commentsCount={3}
@@ -62,8 +58,9 @@ export const Home = () => {
           )}
         </Grid>
         <Grid xs={4} item>
-          <TagsBlock items={tags.items} isLoading={isTagsLoading} />
-          <CommentsBlock
+          * tags & comments under maintains *
+          {/* <TagsBlock items={tags.items} isLoading={isTagsLoading} /> */}
+          {/* <CommentsBlock
             items={[
               {
                 user: {
@@ -81,7 +78,7 @@ export const Home = () => {
               },
             ]}
             isLoading={false}
-          />
+          /> */}
         </Grid>
       </Grid>
     </>

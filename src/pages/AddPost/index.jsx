@@ -88,7 +88,7 @@ export const AddPost = () => {
       spellChecker: false,
       maxHeight: '400px',
       autofocus: true,
-      placeholder: 'Введите текст...',
+      placeholder: 'Input text...',
       status: false,
       autosave: {
         enabled: true,
@@ -111,7 +111,7 @@ export const AddPost = () => {
         variant="outlined"
         size="large"
       >
-        Загрузить превью
+        Upload pic
       </Button>
       <input
         ref={inputFileRef}
@@ -164,7 +164,7 @@ export const AddPost = () => {
         <Button onClick={onSubmit} size="large" variant="contained">
           {isEditing ? 'Save' : 'Create a post'}
         </Button>
-        <Button size="large">Отмена</Button>
+        <Button size="large">Cancel</Button>
       </div>
     </Paper>
   )

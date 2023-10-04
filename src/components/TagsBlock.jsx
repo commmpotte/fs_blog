@@ -12,8 +12,9 @@ import { SideBlock } from "./SideBlock";
 
 export const TagsBlock = ({ items, isLoading = true }) => {
   return (
-    <SideBlock title="Тэги">
-      <List>
+    <SideBlock title="Tags">
+      ...it will be here soon
+      {/* <List>
         {(isLoading ? [...Array(5)] : items).map((name, i) => (
           <a
             style={{ textDecoration: "none", color: "black" }}
@@ -33,7 +34,7 @@ export const TagsBlock = ({ items, isLoading = true }) => {
             </ListItem>
           </a>
         ))}
-      </List>
+      </List> */}
     </SideBlock>
   );
 };
